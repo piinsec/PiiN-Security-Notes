@@ -3,7 +3,7 @@
 - [Install WPScan](#install-wpscan)
 - [WPScan options](#wpscan-options)
 - [Run a basic scan](#run-a-basic-scan)
-
+- [Tips & Tricks](#tips&tricks)
 ## Install WPScan
 
 WPScan can be installed on Linux and macOS systems using the command line. You can download the latest version of WPScan from the official GitHub repository:
@@ -93,6 +93,18 @@ wpscan --url http://example.com --enumerate vp --plugins-detection mixed --plugi
 ```
 This will perform a more detailed scan of the target WordPress site, including enumerating the installed plugins (--enumerate vp), using mixed detection modes for plugin detection and version detection (--plugins-detection mixed --plugins-version-detection mixed), and display a summary of the scan results.
 
+## Tips & Tricks
+- User များကို manual ရှာခြင်း
+- Target Url ရဲ့ နောက်မှာ /wp-json/wp/v2/users ထည့်လိုက်တာနဲ့ user id, name, url ... စသည်ဖြင့် JSON format နဲ့ user ရှိသလောက်ပေါ်လာပါလိမ့်မယ်။
+- User name list ကို -U "user1,user2,user3" ဆိုပြီး wpscan option မှာ ထည့်လို့ရသလို username.txt ဆိုပြီးလဲ file မှာ သိမ်းပြီး scan လို့ ရပါတယ်။
+- Login Bruteforce လုပ်ခြင်း
+  ```shell
+  wpscan --url http://target.com/ --passwrod /usr/share/wordlists/rockyou.txt --username username.txt
+  ```
+  
+- xmlrpc ကို စမ်းသပ်ခြင်း
+  ```shell
+  curl http://target.com/xmlrpc.php
 
 
 
