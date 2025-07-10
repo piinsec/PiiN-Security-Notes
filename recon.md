@@ -1,4 +1,6 @@
 # Recon 
+## Search Engine for bug Bounty Hunters
+[Site](https://nitinyadav00.github.io/Bug-Bounty-Search-Engine/)
 ## Subfinder
 - ရှိသမျှ domain တွေကို စစ်ပြီး domain.txt file မှာ သိမ်းသည်။
 ```shell
@@ -36,9 +38,14 @@ subzy run --targets sdomain.txt
 ```
   - nuclei
 ```shell
-cat alive.txt | nuclei -t takeovers/
+cat alive.txt | nuclei -t ~/.local/nuclei-templates/http/takeovers.yml
 ```
   - For critical vulns only
 ```shell
 cat alive.txt | nuclei -severity critical,high -o nuclei_results.txt
-``` 
+```
+## Finding URLs
+```shell
+katana -u http://target.com -o urls.txt
+```
+
