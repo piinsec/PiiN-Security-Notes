@@ -1,6 +1,16 @@
 # Recon 
+
 ## Search Engine for bug Bounty Hunters
 [Site](https://nitinyadav00.github.io/Bug-Bounty-Search-Engine/)
+
+## Status code check
+[httpstatus.io](https://httpstatus.io)
+
+## Subdomain finder online
+[subdomainfinder.c99.nl](https://subdomainfinder.c99.nl)
+
+
+
 ## Subfinder
 - ရှိသမျှ domain တွေကို စစ်ပြီး domain.txt file မှာ သိမ်းသည်။
 ```shell
