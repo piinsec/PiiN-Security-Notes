@@ -32,7 +32,7 @@
 
   - -detection-mode mixed -e ap (fixes bug on plugin detections)
 
-  - > wpscan.txt
+  - \> wpscan.txt
 
 
 
