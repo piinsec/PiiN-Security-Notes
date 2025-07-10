@@ -3,7 +3,7 @@ _Cybersecurity_ ကို အခုမှ စတင်လေ့လာမဲ့�
 
 # Table of Contents
 - [Cybersecurity Roadmap](#)
-- [Kali Linux Installation](https://github.com/piinsec/pentest-for-all/blob/main/kali-install.md)
-- [Basic Reconnaissance](https://github.com/piinsec/pentest-for-all/blob/main/recon.md)
-- [WPScan Basic](https://github.com/piinsec/pentest-for-all/blob/main/wpscan.md)
+- [Kali Linux Installation](https://github.com/piinsec/pentest-for-all/blob/main/Notes/kali-install.md)
+- [Basic Reconnaissance](https://github.com/piinsec/pentest-for-all/blob/main/Notes/recon.md)
+- [WPScan Basic](https://github.com/piinsec/pentest-for-all/blob/main/Notes/wpscan.md)
 - 
