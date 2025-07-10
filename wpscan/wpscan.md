@@ -1,16 +1,8 @@
 # WPSCAN
-## Table of Content
-- [Install WPScan](#install-wpscan)
-- [WPScan options](#wpscan-options)
-- [Run a basic scan](#run-a-basic-scan)
-- [Tips & Tricks](#tips&tricks)
-## Install WPScan
+- Wordpress website များ ကို security စစ်ဆေးရာမှာ အသုံးတည့်တဲ့ tool တစ်ခုဖြစ်ပါတယ်။ WPScan ကို windows မှာ သုံးခြင်ရင်တော့ အောက်မှာဖော်ပြထားတဲ့ website မှာ ကြည့်ပြီး အဆင့်ဆင့် လုပ်ဆောင်နိုင်ပါတယ်။ Kali linux မှာတော့ defult ပါပါတယ်။
 
-WPScan can be installed on Linux and macOS systems using the command line. You can download the latest version of WPScan from the official GitHub repository:
-
-```shell
-git clone https://github.com/wpscanteam/wpscan.git
-```
+## Install in Windows
+ဒီ [website](https://www.seoeditors.com/expert-seo/how-to-install-wpscan-on-windows-10) မှာ wpscan သွင်းနည်း အဆင့်ဆင့် ကို ပြသထားပါတယ်။
 
 ## WPScan options
 
@@ -77,36 +69,35 @@ Miscellaneous:
         --tor                              Use TOR anonymity network.
         --cache-ttl TIME                    Time to keep cached data in seconds. Default is 1800 (30 minutes).
 ```
-- Save the result : \> wpscan.txt
 
 ### Run a basic scan
-Scanning the target DVWP on http://localhost:8080
-To run a basic scan with WPScan, use the following command:
-
 ```shell
-wpscan --url http://example.com
+wpscan --url http://target.com
 ```
-
+- Save the result
 ```shell
-
-wpscan --url http://example.com --enumerate vp --plugins-detection mixed --plugins-version-detection mixed
+wpscan --url http://target.com > wpscan.txt
 ```
-This will perform a more detailed scan of the target WordPress site, including enumerating the installed plugins (--enumerate vp), using mixed detection modes for plugin detection and version detection (--plugins-detection mixed --plugins-version-detection mixed), and display a summary of the scan results.
 
 ## Tips & Tricks
+- Wpscan API key ရဖို့အတွက် [wpscan website](https://wpscan.com) မှာ account အရင်ဖွင့်ပါ။
+
 - User များကို manual ရှာခြင်း
-- Target Url ရဲ့ နောက်မှာ /wp-json/wp/v2/users ထည့်လိုက်တာနဲ့ user id, name, url ... စသည်ဖြင့် JSON format နဲ့ user ရှိသလောက်ပေါ်လာပါလိမ့်မယ်။
-- User name list ကို -U "user1,user2,user3" ဆိုပြီး wpscan option မှာ ထည့်လို့ရသလို username.txt ဆိုပြီးလဲ file မှာ သိမ်းပြီး scan လို့ ရပါတယ်။
+        - Target Url ရဲ့ နောက်မှာ /wp-json/wp/v2/users ထည့်လိုက်တာနဲ့ user id, name, url ... စသည်ဖြင့် JSON format နဲ့ user ရှိသလောက်ပေါ်လာပါလိမ့်မယ်။
+        - User name list ကို -U "user1,user2,user3" ဆိုပြီး wpscan option မှာ ထည့်လို့ရသလို username.txt ဆိုပြီးလဲ file မှာ သိမ်းပြီး scan လို့ ရပါတယ်။
+
 - Login Bruteforce လုပ်ခြင်း
   ```shell
   wpscan --url http://target.com/ --passwrod /usr/share/wordlists/rockyou.txt --username username.txt
   ```
-  
-- xmlrpc ကို စမ်းသပ်ခြင်း
   ```shell
-  curl http://target.com/xmlrpc.php
 
+- My Fav wpscan command
+'''shell
+wpscan --url https://target.com --random-user-agent -disable-tls-checks --api-token [your API key] --enumerate vp,vt,u
+```
 
+  
 
 
 
