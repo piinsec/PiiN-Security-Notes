@@ -26,7 +26,7 @@
 | 🐞 Bug Bounty Guide | [View Bug Bounty](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/bugbounty.md) |
 | 🎯 Red Team Guide | [View Red Team](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/red-team.md) |
 | 🐧 Kali Linux Installation | [View Kali Install Guide](https://github.com/piinsec/pentest-for-all/blob/main/Notes/kali-install.md) |
-| 🔍 Basic Reconnaissance | [View Recon Guide](https://github.com/piinsec/pentest-for-all/blob/main/Notes/recon.md) |
+| 🔍 Basic Reconnaissance | [View Recon Guide](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/reconnaissance.md) |
 | 🔐 WPScan Basic Usage | [View WPScan Notes](https://github.com/piinsec/pentest-for-all/blob/main/Notes/wpscan.md) |
 
 ---
