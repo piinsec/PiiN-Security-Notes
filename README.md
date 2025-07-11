@@ -41,9 +41,3 @@
 
 ---
 
-## 💡 How to Use
-
-```bash
-git clone https://github.com/piinsec/PiiN-Security-Notes.git
-cd PiiN-Security-Notes/Notes
-```
