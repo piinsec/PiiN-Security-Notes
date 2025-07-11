@@ -53,7 +53,6 @@ ffuf -u https://FUZZ.target.com -w /usr/share/wordlist/Subdomain.txt -o domain2.
 └─$ wc -l sdomain.txt 
 128 sdomain.txt
 ```
-</details>
 ## Live domain tessting
   - httpx
 ```shell
