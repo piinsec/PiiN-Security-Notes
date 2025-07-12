@@ -1,4 +1,4 @@
-# How to increase disk size of Kali Linux in Virtual box
+# How to expend disk space of Kali Linux in Virtual box
 
 ## Step 1
 
