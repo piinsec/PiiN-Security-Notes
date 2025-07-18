@@ -24,6 +24,7 @@
 |-------------|------|
 | 🗺️ Cybersecurity Roadmap | [View Roadmap](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/roadmap.md) |
 | 🐞 Bug Bounty Guide | [View Bug Bounty](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/bugbounty.md) |
+| 🐞 Pentest with Windows | [View Pentest with Windows](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/pentest-with-windows.md)
 | 🎯 Red Team Guide | [View Red Team](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/red-team.md) |
 | 🐧 Kali Linux Installation | [View Kali Install Guide](https://github.com/piinsec/pentest-for-all/blob/main/Notes/kali-install.md) |
 | Expend disk space in VBox | [View expend disk space Guide](https://github.com/piinsec/PiiN-Security-Notes/blob/main/Notes/expend-disk-space-in-vbox.md)
